@@ -5,8 +5,8 @@ class Program
 {
     static void Main(string[] args)
     {
-        Random randomGenerator = new Random();
-        int magic_num = randomGenerator.Next(1, 5);
+        Random randomgenerator = new Random();
+        int magic_num = randomgenerator.Next(1, 101);
 
 
         int guess = 0;
