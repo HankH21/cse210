@@ -35,9 +35,12 @@ public class Journal
 
     public void LoadFromFile(string file)
     {
+        _entries.Clear();
+
         string[] lines = System.IO.File.ReadAllLines(file);
 
         foreach (string line in lines)
+
         {
             string[] parts = line.Split(",");
             if (parts.Length == 3)
