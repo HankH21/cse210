@@ -8,7 +8,6 @@ public class PromptGenerator
         "What was the best food you had today?",
         "What was one thing you think you can do better from today?",
         "What was the strongest emotion I felt today?",
-
     };
 
     public string GetRandomPrompt()

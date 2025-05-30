@@ -1,3 +1,6 @@
+//Satisfication Index: I added a new prompt to ask the user to rate how satisfied of their day from a scale of 1 to 10
+//and stored their input. Tracking user's mood.
+
 using System;
 
 class Program
@@ -10,8 +13,6 @@ class Program
 
         Console.WriteLine("Welcome th the Journal Program!");
         string choice = "0";
-
-
 
         while (choice != "5")
         {
@@ -33,12 +34,14 @@ class Program
                 Console.WriteLine("Please enter your response:");
                 Console.Write(">");
                 string userResponse = Console.ReadLine();
-
+                Console.WriteLine("From a scale of 1 to 10, how satisfied is your day?");
+                string userRate = Console.ReadLine();
 
                 Entry newEntry = new Entry();
                 newEntry._promptText = prompt;
                 newEntry._entryText = userResponse;
                 newEntry._date = DateTime.Now.ToShortDateString();
+                newEntry._rateToday = userRate;
 
                 myJournal.AddEntry(newEntry);
             }

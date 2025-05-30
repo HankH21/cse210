@@ -27,7 +27,7 @@ public class Journal
         {
             foreach (Entry entry in _entries)
             {
-                outputFile.WriteLine($"{entry._date},{entry._promptText},{entry._entryText}");
+                outputFile.WriteLine($"{entry._date},{entry._rateToday},{entry._promptText},{entry._entryText}");
             }
         }
 
@@ -43,12 +43,13 @@ public class Journal
 
         {
             string[] parts = line.Split(",");
-            if (parts.Length == 3)
+            if (parts.Length == 4)
             {
                 Entry loadFile = new Entry();
                 loadFile._date = parts[0];
-                loadFile._promptText = parts[1];
-                loadFile._entryText = parts[2];
+                loadFile._rateToday = parts[1];
+                loadFile._promptText = parts[2];
+                loadFile._entryText = parts[3];
                 _entries.Add(loadFile);
 
             } 
