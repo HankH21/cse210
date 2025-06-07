@@ -28,5 +28,5 @@ class Program
         Console.WriteLine();
         Console.WriteLine("All words are hidden. Goodbye!");
     }
-    }
+    
 }
