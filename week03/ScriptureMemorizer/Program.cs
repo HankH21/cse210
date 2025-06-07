@@ -1,3 +1,4 @@
+//I added a new class Library to store scrptures. It can randomly select a scripure from the list and prompt it to the user.
 using System;
 
 class Program
