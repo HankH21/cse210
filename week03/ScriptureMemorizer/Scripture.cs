@@ -18,26 +18,27 @@ public class Scripture
         }
     }
 
-public void HideRandomWords()
-{
-    Random random = new Random();
-    int hiddenCount = 0;
-
-    while (hiddenCount < 3)
+    public void HideRandomWords()
     {
-        if (IsCompleteHidden())
-        {
-            break;
-        }
+        Random random = new Random();
+        int hiddenCount = 0;
 
-        int index = random.Next(_words.Count);
-        if (!_words[index].IsHidden())
+        while (hiddenCount < 3)
         {
-            _words[index].Hide();
-            hiddenCount++;
+            if (IsCompleteHidden())
+            {
+                break;
+            }
+
+            int index = random.Next(_words.Count);
+            if (!_words[index].IsHidden())
+            {
+                _words[index].Hide();
+                hiddenCount++;
+            }
         }
     }
-}
+
 
     public string GetDisplayText()
     {
