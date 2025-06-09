@@ -1,0 +1,65 @@
+Youtube Video Program
+----------------------
+
+
+----------------------------------------
+	Video Class
+
+_title: string
+_author: string
+_length: int
+_comment: List<Comment>
+
+
+
+Video(title: string, author: string, length: int)
+
+
+GetCommentNumber(): int
+AddComment(): void
+GetVideoInfo():string
+---------------------------------------
+
+
+
+
+-------------------------------------------
+	Comment Class
+
+_username: string
+_commentText: string
+
+
+
+Comment(string username, string commentText)
+
+
+
+GetCommentText(): string
+--------------------------------------------
+
+
+
+
+
+program flow:
+
+Create a Video
+
+	A Video object is created with a title, author, and length
+
+Add Comments to the Video
+
+	Each comment is a Comment object with a username and comment text.
+
+	Use Video.AddComment() to add Comment objects to the Video's internal comment list.
+
+View Information
+
+	Video.GetVideoInfo() returns all the main information about the video.
+
+	Video.GetCommentNumber() returns how many comments there are.
+
+	Loop through the List<Comment> to display each comment using Comment.GetCommentText().
+
+

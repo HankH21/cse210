@@ -1,0 +1,112 @@
+Online Ordering Program
+
+
+
+----------------------------
+	Product Class 
+
+_pruductName: string
+_productID: string
+_price: double
+_quantity: int
+
+
+
+Product(string name, string product ID, double price, int quantity)
+
+
+GetTotalCost(): string
+GetProductIndo(): string
+---------------------------------
+
+
+
+
+
+----------------------------------
+	Address Class
+
+_street: string
+_city: string
+_stateOrProvince: string
+_country: string
+
+
+
+Address(string street, string city, string stateorprovince, string country)
+
+
+InUSA(): bool
+GetAddress(): string
+----------------------------------
+
+
+
+
+----------------------------------
+	Customer Class
+
+_customerName: string
+_customerAddress: Address
+
+
+
+Customer(string name, Address address)
+
+
+CheckUSA(): bool
+-----------------------------------
+
+
+
+
+
+----------------------------------
+	 Order
+
+_customer: Customer
+_products: List<Products>
+
+
+
+Order(Customer customer)
+
+
+AddProduct(Product product): void
+GetTotalCost(): double
+GetPackingLabel(): string
+GetShippingLabel(): string
+-----------------------------------
+
+
+
+program flow:
+
+1. An order is created by an customer
+
+	The Order class includes a Customer.
+
+	Customer is initialized with a name and an Address.
+
+2. Products are added to the order
+
+	Create Product instances with name, product ID, price, and quantity.
+
+	Add each Product to the Order using AddProduct().
+
+3. Order calculates cost
+
+	call Order.GetTotalCost() to get the total price of all products.
+
+	Checks Customer.CheckUSA() to determine shipping cost.
+
+	Adds $5 if in the USA, otherwise add $35
+
+4. Output information
+
+	Order.GetPackingLabel() shows product name and ID for each item.
+
+	Order.GetShippingLabel() shows customer's name and their address.
+
+
+
