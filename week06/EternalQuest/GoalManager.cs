@@ -1,4 +1,3 @@
-//I added a mehthod to show player's title. They will get differnt title when they have higher score. 
 using System.Formats.Asn1;
 using System.Xml.Serialization;
 

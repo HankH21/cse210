@@ -1,2 +1,4 @@
-0
-SimpleGoal|asdfasdf|asdfasdf|30|False
+210
+SimpleGoal|ssdfsaf|asdfasdf|20|True
+EternalGoal|asdfasdf|asdfasdfasf|30
+ChecklistGoal|asdfasdfasdf|asdfasdfasdf|20|3|3|100
